@@ -14,7 +14,7 @@ module Minitest
       ExampleTest.run reporter
 
       exp_format = <<-EOS
-Minitest::TestCase::ExampleTest
+Minitest::Result
   a very long sentence
   pass
   verbosity
