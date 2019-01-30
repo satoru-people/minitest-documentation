@@ -10,7 +10,7 @@ module Minitest
   def self.plugin_documentation_init options
     if Documentation.documentation?
       io = options[:io] || $stdout
-      self.reporter.reporters.reject! {|o| o.is_a? ProgressReporter }
+      #self.reporter.reporters.reject! {|o| o.is_a? ProgressReporter }
       self.reporter.reporters << Documentation.new(io, options)
     end
   end
